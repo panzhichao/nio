@@ -29,7 +29,7 @@ public class CopyFile {
         ByteBuffer buffer = ByteBuffer.allocate(1024);
 
         while (true) {
-            // 读入之前要清空
+            // 读入之前要清空 position=0 limit=capacity
             buffer.clear();
 
             // position自动前进
